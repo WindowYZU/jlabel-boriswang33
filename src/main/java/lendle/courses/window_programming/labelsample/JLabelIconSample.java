@@ -1,4 +1,4 @@
-/*
+    /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -36,8 +36,9 @@ public class JLabelIconSample {
         //1. 利用 url 建立 ImageIcon
         //2. 取得 scaled instance
         //3. 設定到 label1
-        ImageIcon icon=new ImageIcon(new URL());
-        Icon icon2=new ImageIcon(icon.getImage().getScaledInstance());
+       ImageIcon icon=new ImageIcon(new URL("https://gss2.bdstatic.com/-fo3dSag_xI4khGkpoWK1HF6hhy/baike/crop%3D0%2C57%2C692%2C456%3Bc0%3Dbaike92%2C5%2C5%2C92%2C30/sign=5cf833e3bbde9c82b22aa3cf51b1ac3f/960a304e251f95ca1f68456cc1177f3e6609524f.jpg"));
+        Icon icon2=new ImageIcon(icon.getImage().getScaledInstance(50,50,Image.SCALE_SMOOTH));
+        label1.setIcon(icon2);
         
         ////////////////////////////
      
